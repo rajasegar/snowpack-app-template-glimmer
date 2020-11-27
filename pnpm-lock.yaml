@@ -3,6 +3,7 @@ dependencies:
   '@glimmerx/core': 0.2.5
 devDependencies:
   '@babel/plugin-proposal-class-properties': 7.12.1
+  '@babel/plugin-proposal-decorators': 7.12.1
   '@glimmer/babel-plugin-glimmer-env': 2.0.0-beta.1
   '@glimmerx/babel-plugin-component-templates': 0.2.5
   '@snowpack/babel-plugin-package-import': 1.1.5
@@ -269,6 +270,16 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-cKp3dlQsFsEs5CWKnN7BnSHOd0EOW8EKpEjkoz1pO2E5KzIDNV9Ros1b0CnmbVgAGXJubOYVBOGCT1OmJwOI7w==
+  /@babel/plugin-proposal-decorators/7.12.1:
+    dependencies:
+      '@babel/helper-create-class-features-plugin': 7.12.1
+      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/plugin-syntax-decorators': 7.12.1
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-knNIuusychgYN8fGJHONL0RbFxLGawhXOJNLBk75TniTsZZeA+wdkDuv6wp4lGwzQEKjZi6/WYtnb3udNPmQmQ==
   /@babel/plugin-proposal-decorators/7.12.1_@babel+core@7.12.9:
     dependencies:
       '@babel/core': 7.12.9
@@ -412,6 +423,14 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-U40A76x5gTwmESz+qiqssqmeEsKvcSyvtgktrm0uzcARAmM9I1jR221f6Oq+GmHrcD+LvZDag1UTOTe2fL3TeA==
+  /@babel/plugin-syntax-decorators/7.12.1:
+    dependencies:
+      '@babel/helper-plugin-utils': 7.10.4
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-ir9YW5daRrTYiy9UJ2TzdNIJEZu8KclVzDcfSt4iEmOtwQ4llPtWInNKJyKnVXp1vE4bbVd5S31M/im3mYMO1w==
   /@babel/plugin-syntax-decorators/7.12.1_@babel+core@7.12.9:
     dependencies:
       '@babel/core': 7.12.9
@@ -3857,6 +3876,7 @@ packages:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
   '@babel/plugin-proposal-class-properties': ^7.12.1
+  '@babel/plugin-proposal-decorators': ^7.12.1
   '@glimmer/babel-plugin-glimmer-env': ^2.0.0-beta.1
   '@glimmerx/babel-plugin-component-templates': ^0.2.5
   '@glimmerx/component': ^0.2.5
