@@ -1,8 +1,5 @@
 import { renderComponent } from '@glimmerx/core';
-import Component, { hbs } from '@glimmerx/component';
+import App from './App.js';
 
-class MyComponent extends Component {
-  static template = hbs`<h1>Hello world</h1>`;
-}
 
-renderComponent(MyComponent, document.getElementById('app'));
+renderComponent(App, document.getElementById('app'));
