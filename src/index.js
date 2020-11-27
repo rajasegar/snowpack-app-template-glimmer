@@ -1,11 +1,8 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import { renderComponent } from '@glimmerx/core';
+import Component, { hbs } from '@glimmerx/component';
 
-import confetti from 'canvas-confetti';
+class MyComponent extends Component {
+  static template = hbs`<h1>Hello world</h1>`;
+}
 
-confetti.create(document.getElementById('canvas'), {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+renderComponent(MyComponent, document.getElementById('app'));

@@ -5,10 +5,10 @@ module.exports = {
     src: '/_dist_',
   },
   plugins: [
-    /* ... */
+    '@snowpack/plugin-glimmer'
   ],
   install: [
-    /* ... */
+    "@glimmer/core"
   ],
   installOptions: {
     /* ... */
