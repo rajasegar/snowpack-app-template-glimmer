@@ -5,7 +5,18 @@ module.exports = {
     src: '/_dist_',
   },
   plugins: [
-    '@snowpack/plugin-glimmer'
+    [
+    '@snowpack/plugin-babel', {
+      "input": ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
+      transformOptions: {
+        "plugins": [
+          ["@glimmer/babel-plugin-glimmer-env", { DEBUG: false }],
+          "@glimmerx/babel-plugin-component-templates",
+          "@babel/plugin-proposal-class-properties"
+        ] 
+      }
+    }
+    ]
   ],
   install: [
     "@glimmer/core"

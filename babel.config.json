@@ -1,8 +1,0 @@
-{
-  "plugins": [
-    ['@glimmer/babel-plugin-glimmer-env', { DEBUG: false }],
-
-    "@babel/plugin-proposal-class-properties",
-    "@glimmerx/babel-plugin-component-templates "
-  ] 
-}
