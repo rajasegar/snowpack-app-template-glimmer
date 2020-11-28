@@ -8,7 +8,12 @@
     "type": "git",
     "url": "https://github.com/rajasegar/snowpack-app-template-glimmer.git"
   },
-  "keywords": ["csa-template","glimmer", "snowpack", "glimmerjs"],
+  "keywords": [
+    "csa-template",
+    "glimmer",
+    "snowpack",
+    "glimmerjs"
+  ],
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -18,10 +23,10 @@
   },
   "dependencies": {
     "@glimmerx/component": "^0.2.5",
-    "@glimmerx/core": "^0.2.5",
-    "@glimmer/core": "2.0.0-beta.11"
+    "@glimmerx/core": "^0.2.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-proposal-decorators": "^7.12.1",
     "@glimmer/babel-plugin-glimmer-env": "^2.0.0-beta.1",

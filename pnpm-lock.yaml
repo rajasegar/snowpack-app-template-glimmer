@@ -1,15 +1,15 @@
 dependencies:
-  '@glimmer/core': 2.0.0-beta.11
   '@glimmerx/component': 0.2.5
   '@glimmerx/core': 0.2.5
 devDependencies:
-  '@babel/plugin-proposal-class-properties': 7.12.1
-  '@babel/plugin-proposal-decorators': 7.12.1
+  '@babel/core': 7.12.9
+  '@babel/plugin-proposal-class-properties': 7.12.1_@babel+core@7.12.9
+  '@babel/plugin-proposal-decorators': 7.12.1_@babel+core@7.12.9
   '@glimmer/babel-plugin-glimmer-env': 2.0.0-beta.1
   '@glimmerx/babel-plugin-component-templates': 0.2.5
   '@snowpack/babel-plugin-package-import': 1.1.5
   '@snowpack/plugin-babel': 2.1.4
-  prettier: 2.2.0
+  prettier: 2.2.1
   snowpack: 2.17.1
 lockfileVersion: 5.2
 packages:
@@ -83,6 +83,7 @@ packages:
       '@babel/helper-optimise-call-expression': 7.12.7
       '@babel/helper-replace-supers': 7.12.5
       '@babel/helper-split-export-declaration': 7.11.0
+    dev: false
     peerDependencies:
       '@babel/core': ^7.0.0
     resolution:
@@ -95,7 +96,6 @@ packages:
       '@babel/helper-optimise-call-expression': 7.12.7
       '@babel/helper-replace-supers': 7.12.5
       '@babel/helper-split-export-declaration': 7.11.0
-    dev: false
     peerDependencies:
       '@babel/core': ^7.0.0
     resolution:
@@ -252,42 +252,21 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-d+/o30tJxFxrA1lhzJqiUcEJdI6jKlNregCv5bASeGf2Q4MXmnwH7viDo7nhx1/ohf09oaH8j1GVYG/e3Yqk6A==
-  /@babel/plugin-proposal-class-properties/7.12.1:
-    dependencies:
-      '@babel/helper-create-class-features-plugin': 7.12.1
-      '@babel/helper-plugin-utils': 7.10.4
-    dev: true
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    resolution:
-      integrity: sha512-cKp3dlQsFsEs5CWKnN7BnSHOd0EOW8EKpEjkoz1pO2E5KzIDNV9Ros1b0CnmbVgAGXJubOYVBOGCT1OmJwOI7w==
   /@babel/plugin-proposal-class-properties/7.12.1_@babel+core@7.12.9:
     dependencies:
       '@babel/core': 7.12.9
       '@babel/helper-create-class-features-plugin': 7.12.1_@babel+core@7.12.9
       '@babel/helper-plugin-utils': 7.10.4
-    dev: false
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-cKp3dlQsFsEs5CWKnN7BnSHOd0EOW8EKpEjkoz1pO2E5KzIDNV9Ros1b0CnmbVgAGXJubOYVBOGCT1OmJwOI7w==
-  /@babel/plugin-proposal-decorators/7.12.1:
-    dependencies:
-      '@babel/helper-create-class-features-plugin': 7.12.1
-      '@babel/helper-plugin-utils': 7.10.4
-      '@babel/plugin-syntax-decorators': 7.12.1
-    dev: true
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    resolution:
-      integrity: sha512-knNIuusychgYN8fGJHONL0RbFxLGawhXOJNLBk75TniTsZZeA+wdkDuv6wp4lGwzQEKjZi6/WYtnb3udNPmQmQ==
   /@babel/plugin-proposal-decorators/7.12.1_@babel+core@7.12.9:
     dependencies:
       '@babel/core': 7.12.9
       '@babel/helper-create-class-features-plugin': 7.12.1_@babel+core@7.12.9
       '@babel/helper-plugin-utils': 7.10.4
       '@babel/plugin-syntax-decorators': 7.12.1_@babel+core@7.12.9
-    dev: false
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
@@ -424,19 +403,10 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-U40A76x5gTwmESz+qiqssqmeEsKvcSyvtgktrm0uzcARAmM9I1jR221f6Oq+GmHrcD+LvZDag1UTOTe2fL3TeA==
-  /@babel/plugin-syntax-decorators/7.12.1:
-    dependencies:
-      '@babel/helper-plugin-utils': 7.10.4
-    dev: true
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    resolution:
-      integrity: sha512-ir9YW5daRrTYiy9UJ2TzdNIJEZu8KclVzDcfSt4iEmOtwQ4llPtWInNKJyKnVXp1vE4bbVd5S31M/im3mYMO1w==
   /@babel/plugin-syntax-decorators/7.12.1_@babel+core@7.12.9:
     dependencies:
       '@babel/core': 7.12.9
       '@babel/helper-plugin-utils': 7.10.4
-    dev: false
     peerDependencies:
       '@babel/core': ^7.0.0-0
     resolution:
@@ -1071,19 +1041,6 @@ packages:
       node: 6.* || 8.* || >= 10.*
     resolution:
       integrity: sha512-LDSb2/+0AqVQShG6jan/N7RI5698bkY3QHPv+tH2n3BlE2Hr/ZRJP23dJmaP+AJ7sp/kH+v/SmTfqgGeMXELYA==
-  /@glimmer/core/2.0.0-beta.11:
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.62.4
-      '@glimmer/interfaces': 0.62.4
-      '@glimmer/opcode-compiler': 0.62.4
-      '@glimmer/program': 0.62.4
-      '@glimmer/runtime': 0.62.4
-      '@glimmer/validator': 0.62.4
-      '@simple-dom/interface': 1.4.0
-    dev: false
-    resolution:
-      integrity: sha512-z+kV+qixXaqxJS/4bAytpi9Jc2QlVGf/dnTDY38t6H3XQW81eaRuL3Ri7UxmCk8tf9ouvSi1HA3xPbxaDCdQug==
   /@glimmer/core/2.0.0-beta.7:
     dependencies:
       '@glimmer/env': 0.1.7
@@ -1102,22 +1059,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-5zPIYtHnZjcmN7jCEaB5UIkwaKfMQjI95kJyduvI4GOGwEiQBvaUtl95105e+9koPDO5rA2XKafRItC0hKQ9fw==
-  /@glimmer/encoder/0.62.4:
-    dependencies:
-      '@glimmer/interfaces': 0.62.4
-      '@glimmer/vm': 0.62.4
-    dev: false
-    resolution:
-      integrity: sha512-iIJ/tD+OFu/g37EC8LCZTldjuPXQmywsHq3A4c91vzPrxElRMH3Crln8+u4X75r6SOhYza5jN7mhNSa0YV2rKw==
   /@glimmer/env/0.1.7:
     resolution:
       integrity: sha1-/S0rVakCnGs3psk16MiHGucN+gc=
-  /@glimmer/global-context/0.62.4:
-    dependencies:
-      '@glimmer/env': 0.1.7
-    dev: false
-    resolution:
-      integrity: sha512-F1vD6+zURXOzFKYUL7Dw+zDasfYKpBWt/7GJ8lUVNJ7XOZQQOOeY8Tr29K4ZUrqu3lByTqyBR46gpE8UdbsJ2w==
   /@glimmer/interfaces/0.50.4:
     dependencies:
       '@simple-dom/interface': 1.4.0
@@ -1128,20 +1072,10 @@ packages:
       '@simple-dom/interface': 1.4.0
     resolution:
       integrity: sha512-ImwkFNj92RaeANQPlnSQ5kTtK18JzkY2FPE7N7Ktn3AvdXgM4P3puQzPuXhTn4UCBl6NZtN8YqCAy7kQ6eRC0w==
-  /@glimmer/interfaces/0.62.4:
-    dependencies:
-      '@simple-dom/interface': 1.4.0
-    dev: false
-    resolution:
-      integrity: sha512-x3L9YUL17fRgxFrnUvUYTxgnLoh8BipdqkweUEVA5qdIa1dcidUzHUFtWgRiWZ+dKCJBtxh2ubEwjOfgobpMuQ==
   /@glimmer/low-level/0.51.1:
     dev: false
     resolution:
       integrity: sha512-iIKuFtw4tzfYW3xwFToiGTZQ6k5lpmDLSc0V8KxagHtux9yKfNLY3lXqhm0dZs+kfmVEiNjpgekMHzP6rmQSkQ==
-  /@glimmer/low-level/0.62.4:
-    dev: false
-    resolution:
-      integrity: sha512-1aNPSfNUs/b3VfQ/DzhKVmIA/JlW30hcDxlitKms8nqmkP6wCgJhurIaU0ksjkIpFyIsZW4ojasAzh/QZ0aEAg==
   /@glimmer/opcode-compiler/0.51.1:
     dependencies:
       '@glimmer/encoder': 0.51.1
@@ -1154,18 +1088,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-OwTg5ORDEoDSxJyDHekR5GLMbrBLJi0WZ1X6MUnetqJngEtdhj3i0fH+VGnL7kQNt0+Xuv1lZn5aNnyN9zWo2w==
-  /@glimmer/opcode-compiler/0.62.4:
-    dependencies:
-      '@glimmer/encoder': 0.62.4
-      '@glimmer/interfaces': 0.62.4
-      '@glimmer/program': 0.62.4
-      '@glimmer/reference': 0.62.4
-      '@glimmer/util': 0.62.4
-      '@glimmer/vm': 0.62.4
-      '@glimmer/wire-format': 0.62.4
-    dev: false
-    resolution:
-      integrity: sha512-a/ty5b6yovmf2d4mj6U9NE/EnlKHRlzGIh0fJD0A3VPO0mVoGQTnI2So6kkI/1u/nSbofULn6v8QarNoLK02uA==
   /@glimmer/program/0.51.1:
     dependencies:
       '@glimmer/encoder': 0.51.1
@@ -1174,14 +1096,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-5Rjcy+s1f2Je18w+st/K4NKF+O9Y62AVencx35PH0dgNUyxYkszj4+Ju+s8xhI+v6Ui+DmFaAPnp0ppPABTtRA==
-  /@glimmer/program/0.62.4:
-    dependencies:
-      '@glimmer/encoder': 0.62.4
-      '@glimmer/interfaces': 0.62.4
-      '@glimmer/util': 0.62.4
-    dev: false
-    resolution:
-      integrity: sha512-S+wb8Up0Dwxuz8Bzkvw41R199Xu5RXYdoNsRWR2lmj7+ohDuiW8QJp51WyNcfr7ONU5+nqLxp19zNWJzKKIWzw==
   /@glimmer/reference/0.51.1:
     dependencies:
       '@glimmer/env': 0.1.7
@@ -1191,16 +1105,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-urP3LKlUN+ljQjhgXVFXDB3nRX+HXdw+5BehO4ejHcovqHQ3RE3/UXajt4XxYw+9ihRCqHm+MTQIrI5hDjgo/A==
-  /@glimmer/reference/0.62.4:
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.62.4
-      '@glimmer/interfaces': 0.62.4
-      '@glimmer/util': 0.62.4
-      '@glimmer/validator': 0.62.4
-    dev: false
-    resolution:
-      integrity: sha512-oabqcfZrMB8FoVLZqqD4w0cUcWt1/d8uBGtXKGGNLkrV2smPFJO/rcfFpZq8alMgzqII5F9Q57gRL+qh0AD8og==
   /@glimmer/runtime/0.51.1:
     dependencies:
       '@glimmer/env': 0.1.7
@@ -1216,22 +1120,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gT/rM8WPJxWhG5d3AFi7zZna06KP2OunuxpFVgGjspTY+AwhOjxa07L23TG1AUVkJMrWMZLeVDT3h9UsZGYOUg==
-  /@glimmer/runtime/0.62.4:
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.62.4
-      '@glimmer/interfaces': 0.62.4
-      '@glimmer/low-level': 0.62.4
-      '@glimmer/program': 0.62.4
-      '@glimmer/reference': 0.62.4
-      '@glimmer/util': 0.62.4
-      '@glimmer/validator': 0.62.4
-      '@glimmer/vm': 0.62.4
-      '@glimmer/wire-format': 0.62.4
-      '@simple-dom/interface': 1.4.0
-    dev: false
-    resolution:
-      integrity: sha512-aBoCmOWy00lJYriIpnc8Yvx6sQ6sxObiCjvLwD9nN1IwxqfCtqLTwfQr6E98ez0Rl8wMY6M3iTDr9Mvrxt+kVw==
   /@glimmer/syntax/0.50.4:
     dependencies:
       '@glimmer/interfaces': 0.50.4
@@ -1269,27 +1157,12 @@ packages:
       '@simple-dom/interface': 1.4.0
     resolution:
       integrity: sha512-MCwUvV3z4pqLpeXcv5Mbchdgw0GeEPH8jUEkUTG837b5XlC2M/NO893E5A8AZbGNSP7CDsYibDExz7mjaLqq/A==
-  /@glimmer/util/0.62.4:
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/interfaces': 0.62.4
-      '@simple-dom/interface': 1.4.0
-    dev: false
-    resolution:
-      integrity: sha512-7x04I4mQpxveAoEbpFfXFFkYpuJoATHuGdwPjgcQc0nSjAkGDkzIMlRN3stgZAz32eSVj9n7SOXHVtHEhw3cCg==
   /@glimmer/validator/0.51.1:
     dependencies:
       '@glimmer/env': 0.1.7
     dev: false
     resolution:
       integrity: sha512-hfcuGgoHdIWFPPeo6DBRvFQ/WdUsogbT7Ub8lFVSgd6sHcWeQNejsCegtLeePdIH8orn2Tj0AXahyHD+/6TnAQ==
-  /@glimmer/validator/0.62.4:
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.62.4
-    dev: false
-    resolution:
-      integrity: sha512-yZ3cfvbW/S3kAu/EDFCxqMrOp4lWiZ5QxKiDej+GVkuz8yirYVBkf1vZnxogmDyCWLZGvmTr/7QimvQZSHQxVw==
   /@glimmer/vm/0.51.1:
     dependencies:
       '@glimmer/interfaces': 0.51.1
@@ -1297,26 +1170,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-1pxfz4DrTGenaDQzA5vxOlGI4JWFVZ2Ft7Y1Ja+NoNnevm/Ct5X2eu06Alwpbon196AJvS9RsvaobCDTwiBaRw==
-  /@glimmer/vm/0.62.4:
-    dependencies:
-      '@glimmer/interfaces': 0.62.4
-      '@glimmer/util': 0.62.4
-    dev: false
-    resolution:
-      integrity: sha512-Ug7pipG2gSAXWPHhm6LH1Ow8DEwUOaIy2XGJ5RPZv/ROGOrxGWw4I2Zr46UiJnRdpCs57DkUxUtCn/9saylq4w==
   /@glimmer/wire-format/0.51.1:
     dependencies:
       '@glimmer/interfaces': 0.51.1
       '@glimmer/util': 0.51.1
     resolution:
       integrity: sha512-EcgSfF4jAq9Q90okQIoSu+P2Ss/ZZkbjo4ZtFEPqTr8U3qqb01pR4qHJF5lAU8uFebHasiB8OBGdBBB6jwFLDA==
-  /@glimmer/wire-format/0.62.4:
-    dependencies:
-      '@glimmer/interfaces': 0.62.4
-      '@glimmer/util': 0.62.4
-    dev: false
-    resolution:
-      integrity: sha512-zUWSVkZCgpbNZGb22ksJevDJqKfVOl3JSWHpwel6wpwXWL6BvGjLQwW7+GIKX3gv6qw1K/gJTwsikrHcuExi2g==
   /@glimmerx/babel-plugin-component-templates/0.2.5:
     dependencies:
       '@babel/core': 7.12.9
@@ -1810,7 +1669,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001161
       colorette: 1.2.1
-      electron-to-chromium: 1.3.609
+      electron-to-chromium: 1.3.610
       escalade: 3.1.1
       node-releases: 1.1.67
     dev: false
@@ -2088,10 +1947,10 @@ packages:
       node: '>=0.8'
     resolution:
       integrity: sha512-gzao+mxnYDzIysXKMQi/+M1mjy/rjestjg6OPoYTtI+3Izp23oiGZitsl9lPDPiTGXbcSIk1iJWhliSaglxnUg==
-  /electron-to-chromium/1.3.609:
+  /electron-to-chromium/1.3.610:
     dev: false
     resolution:
-      integrity: sha512-kcmRWmlHsUKKLfsSKSf7VqeTX4takM5ndjVTM3et3qpDCceITYI1DixvIfSDIngALoaTnpoMXD3SXSMpzHkYKA==
+      integrity: sha512-eFDC+yVQpEhtlapk4CYDPfV9ajF9cEof5TBcO49L1ETO+aYogrKWDmYpZyxBScMNe8Bo/gJamH4amQ4yyvXg4g==
   /ember-cli-babel-plugin-helpers/1.1.1:
     dev: false
     engines:
@@ -3349,13 +3208,13 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha1-AA29H47vIXqjaLmiEsX8QLKo8/I=
-  /prettier/2.2.0:
+  /prettier/2.2.1:
     dev: true
     engines:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-yYerpkvseM4iKD/BXLYUkQV5aKt4tQPqaGW6EsZjzyu0r7sVZZNPJW4Y8MyKmicp6t42XUPcBVA+H6sB3gqndw==
+      integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
   /process-nextick-args/2.0.1:
     dev: true
     resolution:
@@ -3987,10 +3846,10 @@ packages:
     resolution:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
+  '@babel/core': ^7.12.9
   '@babel/plugin-proposal-class-properties': ^7.12.1
   '@babel/plugin-proposal-decorators': ^7.12.1
   '@glimmer/babel-plugin-glimmer-env': ^2.0.0-beta.1
-  '@glimmer/core': 2.0.0-beta.11
   '@glimmerx/babel-plugin-component-templates': ^0.2.5
   '@glimmerx/component': ^0.2.5
   '@glimmerx/core': ^0.2.5

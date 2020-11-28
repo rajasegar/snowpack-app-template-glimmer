@@ -20,7 +20,7 @@ module.exports = {
       },
     ],
   ],
-  install: [],
+  install: ['@glimmer/core'],
   installOptions: {
     /* ... */
   },
