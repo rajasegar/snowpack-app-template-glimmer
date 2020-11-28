@@ -1,9 +1,18 @@
 # Glimmer with Snowpack
 
+[![npm version](http://img.shields.io/npm/v/snowpack-app-template-glimmer.svg?style=flat)](https://npmjs.org/package/snowpack-app-template-glimmer "View this project on npm")
+
+
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
 This is a [glimmer](https://glimmerjs.com) application bootstrapped with [Snowpack](https://snowpack.dev).
-It uses the experimental [glimmerx]() libraries and tools with component templates.
+It uses the experimental [glimmerx](https://github.com/glimmerjs/glimmer-experimental) libraries and tools with component templates.
+
+## Usage
+This is how you can use this template with Snowpack to create glimmer apps:
+```
+npx create-snowpack-app my-awesome-glimmer-app --template snowpack-app-template-glimmer
+```
 
 ## Available Scripts
 
