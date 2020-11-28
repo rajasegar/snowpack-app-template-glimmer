@@ -5,7 +5,6 @@ devDependencies:
   '@babel/core': 7.12.9
   '@babel/plugin-proposal-class-properties': 7.12.1_@babel+core@7.12.9
   '@babel/plugin-proposal-decorators': 7.12.1_@babel+core@7.12.9
-  '@glimmer/babel-plugin-glimmer-env': 2.0.0-beta.1
   '@glimmerx/babel-plugin-component-templates': 0.2.5
   '@snowpack/babel-plugin-package-import': 1.1.5
   '@snowpack/plugin-babel': 2.1.4
@@ -995,13 +994,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-tGRdvgC9/QMQSuSuJV45xoyhI0Pzjm7A9o/MVVA3HakXIImJbbzx/k/6dO9CUEQXIyS2y0fW6C1XaYOG7rY0FQ==
-  /@glimmer/babel-plugin-glimmer-env/2.0.0-beta.1:
-    dependencies:
-      '@babel/core': 7.12.9
-      babel-plugin-debug-macros: 0.3.3_@babel+core@7.12.9
-    dev: true
-    resolution:
-      integrity: sha512-R7hsEHlxcgoxs8ZY81bh3u7aIL3bFxjXAV31Kx9FaTDhpTnT47OTBEaVAjl4efehAbGCFPeBKY14RdNF18+g0Q==
   /@glimmer/babel-plugin-strict-template-precompile/2.0.0-beta.7:
     dependencies:
       '@babel/core': 7.12.9
@@ -1483,6 +1475,7 @@ packages:
     dependencies:
       '@babel/core': 7.12.9
       semver: 5.7.1
+    dev: false
     engines:
       node: '>=6'
     peerDependencies:
@@ -3849,7 +3842,6 @@ specifiers:
   '@babel/core': ^7.12.9
   '@babel/plugin-proposal-class-properties': ^7.12.1
   '@babel/plugin-proposal-decorators': ^7.12.1
-  '@glimmer/babel-plugin-glimmer-env': ^2.0.0-beta.1
   '@glimmerx/babel-plugin-component-templates': ^0.2.5
   '@glimmerx/component': ^0.2.5
   '@glimmerx/core': ^0.2.5
