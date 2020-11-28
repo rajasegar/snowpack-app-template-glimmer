@@ -19,7 +19,8 @@
     "build": "snowpack build",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "format": "prettier --write \"src/**/*.js\"",
-    "lint": "prettier --check \"src/**/*.js\""
+    "lint": "prettier --check \"src/**/*.js\"",
+    "deploy": "git push && git push --tags && npm publish"
   },
   "dependencies": {
     "@glimmerx/component": "^0.2.5",
