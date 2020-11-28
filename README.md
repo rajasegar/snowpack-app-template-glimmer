@@ -1,6 +1,9 @@
-# New Project
+# Glimmer with Snowpack
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
+
+This is a [glimmer](https://glimmerjs.com) application bootstrapped with [Snowpack](https://snowpack.dev).
+It uses the experimental [glimmerx]() libraries and tools with component templates.
 
 ## Available Scripts
 

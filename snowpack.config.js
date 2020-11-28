@@ -6,22 +6,21 @@ module.exports = {
   },
   plugins: [
     [
-    '@snowpack/plugin-babel', {
-      "input": ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
-      transformOptions: {
-        "plugins": [
-          ["@glimmer/babel-plugin-glimmer-env", { DEBUG: false }],
-          "@glimmerx/babel-plugin-component-templates",
-          ['@babel/plugin-proposal-decorators', { legacy: true }],
-          "@babel/plugin-proposal-class-properties"
-        ] 
-      }
-    }
-    ]
+      '@snowpack/plugin-babel',
+      {
+        input: ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
+        transformOptions: {
+          plugins: [
+            ['@glimmer/babel-plugin-glimmer-env', { DEBUG: false }],
+            '@glimmerx/babel-plugin-component-templates',
+            ['@babel/plugin-proposal-decorators', { legacy: true }],
+            '@babel/plugin-proposal-class-properties',
+          ],
+        },
+      },
+    ],
   ],
-  install: [
-    "@glimmer/core"
-  ],
+  install: [],
   installOptions: {
     /* ... */
   },
