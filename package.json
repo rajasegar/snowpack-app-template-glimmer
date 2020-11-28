@@ -1,4 +1,14 @@
 {
+  "name": "snowpack-app-template-glimmer",
+  "description": "A preconfigured template for Snowpack with Glimmer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/rajasegar/snowpack-app-template-glimmer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajasegar/snowpack-app-template-glimmer.git"
+  },
+  "keywords": ["csa-template","glimmer", "snowpack", "glimmerjs"],
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
