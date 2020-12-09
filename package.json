@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "@glimmerx/component": "^0.2.5",
-    "@glimmerx/core": "^0.2.5"
+    "@glimmerx/core": "^0.2.5",
+    "@glimmerx/modifier": "^0.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
